@@ -1,0 +1,143 @@
+
+.icon-sm {
+  font-size: 2rem;
+}
+
+
+/*               home.blade.php      POST CARD            */
+
+
+.post_user_name{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.post_image{
+  width: 100%;
+  text-align: center;
+}
+.post_image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.post_item_category{
+  text-decoration: none;
+  border-radius: 20%;
+  font-size: 12px;
+  color:#60bee9;
+}
+
+.post_like{
+  margin-top: 10px;
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight:bold;
+}
+
+  /*               home.blade.php      Post Comment            */
+  
+  
+  .comment_content{
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 10px;
+    border-radius: 16px;
+  }
+.comment_user{
+  font-size: 14px;
+  font-weight: bold;
+}
+.comment_body{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+  /*               profile.blade.php     Profile           */
+
+
+
+  .square {
+    width: 100%;
+    padding-bottom: 100%; /* 1:1 アスペクト比を維持 */
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+
+  
+  .profile_icon {
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 120px; /* アイコンのサイズを指定 */
+    height: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    transition: transform 0.3s, box-shadow 0.3s; /* ホバー時のアニメーション */
+  }
+  .post_icon {
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 45px; /* アイコンのサイズを指定 */
+    height: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    transition: transform 0.3s, box-shadow 0.3s; /* ホバー時のアニメーション */
+  }
+
+
+.profile_icon_avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.user-icon {
+  margin-right: 15px;
+}
+
+.profile-icon-avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.list-group-item .user-info {
+  margin-left: 10px;
+}
+
+
+/*                      ADMIN                               */
+
+
+
+
+.table-user th {
+  background-color: #D1E7DD !important;
+}
+.table-post th {
+  background-color: #CFE2FF !important;
+}
+.table-category th {
+  background-color: #FFF3CD !important;
+}
