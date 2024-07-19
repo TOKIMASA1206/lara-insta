@@ -2,10 +2,12 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\URL;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Support\Facades\Gate;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -31,5 +33,9 @@ class AppServiceProvider extends ServiceProvider
 
          // Bootstrapのデザインを使う
          Paginator::useBootstrap();
+
+         if (config('app.env') === 'production') {
+            URL::forceScheme('https');
+        }
     }
 }
